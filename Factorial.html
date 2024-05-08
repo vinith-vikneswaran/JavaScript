@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+        var inputNumber = prompt('Please enter an integer');
+        var total = 1;
+        for (i = 0; i < inputNumber; i++)
+        {
+        total = total * (inputNumber - i);
+        }
+        document.write("Factorial of "+inputNumber + '! = ' + total);
+    </script>
+</body>
+</html>
