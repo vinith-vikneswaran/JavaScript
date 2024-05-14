@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeColour</title>
+    <style>
+        #update
+        {
+            margin-top: 300px;
+            padding: 12px;
+            color: white;
+            background-color: green;
+            border-radius: 10px;
+            border: 0px;
+        }
+        button:hover
+        {
+           cursor: pointer;
+        }
+    </style>
+    <script>
+        function change()
+        {
+            var col = '#' + Math.floor(Math.random()*16777215).toString(16)
+            document.body.style.backgroundColor = col
+ 
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <button id="update" onclick="change()">Change Color</button>
+    </center>
+</body>
+</html>
